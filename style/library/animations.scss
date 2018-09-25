@@ -1,3 +1,5 @@
+//KeyFrames
+
 @keyframes fadeIn {
     0% {
         opacity: 0; 
@@ -30,6 +32,18 @@
     }
 }
 
+@keyframes marquee {
+    0% {
+        background-position: 0 100%;
+        margin-left: -100%;
+    }
+    100% {
+        background-position: 0 -100%;
+        margin-left: 100%;
+    }
+}
+
+//Classes
 .fadeInUp {
     animation-name: fadeInUp;
 }
