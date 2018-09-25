@@ -1,0 +1,119 @@
+@media (max-width: 960px) {
+	//Bootstrap container
+	.container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.d-flex {
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.button--download {
+		margin-bottom: 20px;
+	}
+
+	//Mobile Menu
+	.mainHeader {
+		align-items: center;
+		background-color: rgba(39, 37, 63, 0.85);
+		display: flex;
+		flex-direction: column;
+		padding: 10px 0;
+		text-align: center;
+
+		.mainMenu {
+			display: none;
+	
+			&.active {
+				align-items: center;
+				display: flex;
+				flex-direction: column;
+			}
+
+			a {
+				margin-bottom: 15px;
+			}
+		}
+	}
+	
+	.button--mobile {
+		background-color: transparent;
+		background-image: url(img/menu.png);
+		border: 0;
+		display: block;
+		height: 40px;
+		width: 40px;
+		@include background-cover;
+	}
+
+	//-- Section Resume
+	.section--resume {
+
+		.resume {
+			&__featuredList {
+				.listItem {
+					border: 0;
+					margin-bottom: 20px;
+
+					img {
+						align-self: center;
+						margin: 0;
+					}
+				}
+			}
+			
+			&__textArea {
+
+			}
+
+			&__text, &__title {
+				margin-bottom: 25px;
+			}
+
+			&__title {
+				text-align: center;
+			}
+		} 
+	}
+
+	//-- Section Snippets
+	.section--snippets .snippets__right {
+		margin: 175px 0 0 0;
+	}
+
+	//-- Section Features
+	.section--features .features {
+		&__left, &__right {
+			text-align: center;
+		}
+	}
+
+	//-- Section Integration
+	.section--integration img {
+		margin-bottom: 40px;
+		width: 20%;
+	}
+
+	//-- Section Customers
+	.section--customers {
+
+		.slide {
+			flex-direction: column;
+
+			img {
+				margin-left: 0;
+			}
+		}
+
+		.glide__arrows {
+			left: -20px;
+		}
+	}
+
+	//-- Section Contact
+	.section--contact form {
+		flex-direction: column;
+	}
+}

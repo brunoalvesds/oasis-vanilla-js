@@ -1,0 +1,74 @@
+//-- Section Customers
+.section--customers {
+    background-color: $purple-2;
+    padding: 130px 0;
+    
+    .section {
+        &__title, 
+        h3 {
+            color: $purple-10;
+        }
+
+        &__title {
+            font-family: $font-open;
+            font-size: 30px;
+            font-weight: 100;
+            margin-bottom: 65px;
+            text-transform: capitalize;
+        }
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        color: $gray-1;
+        font-size: 15px;
+    }
+
+    .slide {
+        align-items: center;
+        display: flex;
+        &__content {
+            background-color: $white;
+            flex: 1.8;
+            padding: 70px 50px;
+        }
+        &__photo {
+            flex: 2.2;
+
+            img {
+                height: auto;
+                margin-left: -5%;
+                width: 100%;
+            }
+        }
+    }
+
+    .glide {
+        &__arrows {
+            position: absolute;
+            left: -30px;
+            top: calc(50% - 50px);
+            width: 50px;
+        }
+        &__arrow {
+            appearance: none;
+            background-color: $purple-3;
+            border: 0;
+            color: $purple-5;
+            font-size: 15px;
+            margin-bottom: 5px;
+            padding: 23px 25px;
+            -webkit-appearance: none;
+            @include transition;
+
+            &:hover {
+                background-color: $purple-5;
+                color: $purple-3;
+                cursor: pointer;
+            }
+        }
+    }
+}

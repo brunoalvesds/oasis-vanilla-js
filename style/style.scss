@@ -1,0 +1,21 @@
+//========- Project Base -========
+@import './base/_variables.scss';
+@import './base/_mixins.scss';
+@import './base/_reset.scss';
+
+//========- Frameworks and Libraries -========
+//-- Bootstrap 4 (FlexBox)
+@import './library/bootstrap-4-grid.scss';
+//-- Glide Slide/Carousel (Vanilla JS)
+@import './library/glide.scss';
+
+//========- Animations -========
+@import './library/animations.scss';
+
+//========- Custom Styles for Oasis -========
+@import './modules/site-global.scss';
+@import './modules/main-header.scss';
+//-- Sections
+@import './modules/sections/section.scss';
+//-- Responsive
+@import './modules/responsive.scss';

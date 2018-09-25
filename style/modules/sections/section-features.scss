@@ -1,0 +1,66 @@
+// -- Section Features
+.section--features {
+    padding: 215px 0 80px;
+
+    p {
+        font-size: 25px;
+    }
+
+    .features {
+        &__left,
+        &__right {
+            flex: 1;
+            margin-top: 100px;
+        }
+
+        &__left {
+            padding-left: 20px;
+            text-align: right;
+        }
+
+        &__right {
+            padding-right: 20px;
+            text-align: left;
+        }
+
+        &__item {
+            margin-bottom: 25px;
+        }
+    }
+
+    .infoBar {
+        flex: 1.2;
+        margin: 0 50px;
+
+        p {
+            font-size: 16px;
+            padding: 20px;
+        }
+
+        span {
+            font-size: 40px;
+        }
+
+        .icon-arrow {
+            height: 30px;
+            width: 36px;
+        }
+
+        .productInfos {
+            padding: 30px;
+
+            .numberInfo {
+                margin-right: 50px;
+
+                &__title {
+                    font-size: 16px;
+                    margin-bottom: 15px;
+                }
+
+                &__value {
+                    font-size: 34px;
+                }
+            }
+        }
+    }
+}

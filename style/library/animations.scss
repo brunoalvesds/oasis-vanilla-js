@@ -1,0 +1,48 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1; 
+    } 
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0; 
+    }
+    50% {
+        opacity: 1;  
+    }
+    100% {
+        opacity: 0; 
+    } 
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0)
+    }
+    to {
+        opacity: 1;
+        transform: none
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+.fadeInOut {
+    animation-name: fadeInOut;
+}
+
+.fadeIn {
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}

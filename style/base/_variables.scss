@@ -1,0 +1,35 @@
+//Colors
+$gray-1: #575757;
+$gray-3: #ced4da;
+
+$white: #fff;
+
+$purple-1: #eaeaea;
+$purple-2: #f6f2fe;
+$purple-3: #e8e2f3;
+$purple-4: #c0b2fc;
+$purple-5: #6146d7;
+$purple-5b: #7d5bbe;
+$purple-6: #3e3c65;
+$purple-7: #38355a;
+$purple-8: #383533;
+$purple-9: #3f3d59;
+$purple-10: #27253f;
+$purple-11: #1d1a2b;
+$purple-12: #1f1d34;
+$purple-13: #212b36;
+$purple-14: #2d2a48;
+
+
+//Responsive widths
+$mobile-width: 375px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Fjalla+One');
+$font-fjalla: "Fjalla One", sans-serif;
+$font-open: "Open Sans", sans-serif;
+
+//Others
+$transition: all .2s ease-in;

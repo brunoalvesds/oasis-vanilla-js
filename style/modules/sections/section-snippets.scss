@@ -1,0 +1,71 @@
+// -- Section Snippets
+.section--snippets {
+    padding-top: 170px;
+
+    .snippets {
+
+        &__left {
+            flex: 1.2;
+        }
+
+        &__right {
+            flex: 1;
+            margin: 175px 0 0 35px;
+
+            .tracking {
+                background-color: $purple-5;
+                box-shadow: 0 2px 13px #141321;
+                padding: 60px 40px;
+                position: relative;
+
+                &:before {
+                    background-image: url(img/info.png);
+                    content: '';
+                    height: 204px;
+                    position: absolute;
+                    right: 0;
+                    top: -170px;
+                    width: 74px;
+                }
+
+                &:after {
+                    animation: fadeInOut 1.5s ease-in infinite;
+                    box-shadow: 0px 0px 310px 55px $white;
+                    content: '';
+                    position: absolute;
+                    top: -140px;
+                    right: 35px;
+                }
+
+                p {
+                    font-size: 24px;
+                }
+
+                .section__title {
+                    margin-bottom: 70px;
+                } 
+            }
+        }
+    }
+
+    .listItem {
+        background-color: $purple-14;
+        border: 1px solid $purple-5;
+        border-radius: 3px;
+        padding: 30px 35px;
+        margin-bottom: 30px;
+        @include hover-move-top;
+
+        p {
+            color: $purple-4;
+            font-size: 24px;
+            font-weight: 400;
+            margin-right: 30px;
+        }
+
+        strong {
+            font-family: $font-fjalla;
+            font-size: 50px;
+        }
+    }
+}

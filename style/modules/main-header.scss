@@ -1,0 +1,26 @@
+//Main header styles
+.mainHeader {
+    background-color: rgba(39, 37, 63, 0.75);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.mainMenu {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 10%;
+
+    a {
+        color: $white;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 4.4px;
+        text-transform: uppercase;
+        transition: $transition;
+        
+        &:hover {
+            color: $purple-5;
+        }
+    }
+}

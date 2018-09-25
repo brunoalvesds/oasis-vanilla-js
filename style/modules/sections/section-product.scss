@@ -1,0 +1,32 @@
+// -- Section Product
+.section--product {
+    padding: 0 80px;
+
+    p {
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+
+    .product {
+        &__left {
+            flex: 3;
+        }
+
+        &__right {
+            flex: 2;
+        }
+
+        &__title {
+            font-family: $font-fjalla;
+            font-size: 70px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+    }
+
+    .infoBar p {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    
+}
