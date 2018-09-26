@@ -9,7 +9,7 @@ new Glide('.glide', {
   perView: 3
 });
 
-//Smooth Scroll (help by https://codepen.io/a8t/)
+//Smooth Scroll for all anchors in all site (help by https://codepen.io/a8t/)
 function anchorLinkHandler(e) {
     const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
 
@@ -33,8 +33,6 @@ function anchorLinkHandler(e) {
 }
 
 const linksToAnchors = document.querySelectorAll('a[href^="#"]');
-console.log(linksToAnchors.forEach(each => (each.onclick = anchorLinkHandler)));
-
 linksToAnchors.forEach(each => (each.onclick = anchorLinkHandler));
 
 

@@ -8,3 +8,9 @@ Observações:
 - Procurei nomear todas as classes de acordo com o padrão BEM, utilizando camelCasing e a língua inglesa.
 
 * Busquei aperfeiçoar minhas técnicas de CSS e aprender novas ferramentas neste projeto, como no caso do Bootstrap 4 e o Glide.js. 
+
+
+Referências:
+
+- https://developer.mozilla.org
+- https://www.w3.org/TR/html-aria/

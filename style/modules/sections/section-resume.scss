@@ -5,6 +5,7 @@
     position: relative;
 
     &:before {
+        animation: fadeInOut 1.5s infinite ease-in-out;
         content: '';
         background-image: url(img/lines.svg);
         background-repeat: repeat-x;
@@ -15,7 +16,6 @@
         z-index: -1;
     }
     
-
     .resume {
         &__featuredList,
         &__textArea {
@@ -42,7 +42,8 @@
                     width: 50px;
                 }
 
-                p {
+                figcaption {
+                    line-height: 24px;
                     margin: 0 20px;
                 }
             }

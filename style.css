@@ -27,9 +27,10 @@ body {
 
 nav, header, footer, article, section, figure, figcaption {
   display: block;
-  margin: 0; }
+  margin: 0;
+  outline: none; }
 
-figure, figcaption, img {
+figure, img {
   line-height: 0; }
 
 img, input, object, embed {
@@ -1888,6 +1889,13 @@ html {
   to {
     opacity: 1;
     transform: none; } }
+@keyframes marquee {
+  0% {
+    background-position: 0 100%;
+    margin-left: -100%; }
+  100% {
+    background-position: 0 -100%;
+    margin-left: 100%; } }
 .fadeInUp {
   animation-name: fadeInUp; }
 
@@ -1983,9 +1991,6 @@ body {
   height: 19px;
   width: 23px; }
 
-@media (max-width: 960px) {
-  .d-flex {
-    flex-direction: column; } }
 .mainHeader {
   background-color: rgba(39, 37, 63, 0.75);
   position: fixed;
@@ -2043,6 +2048,7 @@ body {
   color: #575757;
   position: relative; }
   .section--resume:before {
+    animation: fadeInOut 1.5s infinite ease-in-out;
     content: '';
     background-image: url(img/lines.svg);
     background-repeat: repeat-x;
@@ -2067,7 +2073,8 @@ body {
         height: 50px;
         margin-left: 20px;
         width: 50px; }
-      .section--resume .resume__featuredList .listItem p {
+      .section--resume .resume__featuredList .listItem figcaption {
+        line-height: 24px;
         margin: 0 20px; }
   .section--resume .resume__textArea {
     border-radius: 0 0 3px 3px;
@@ -2283,7 +2290,7 @@ body {
 
   .mainHeader {
     align-items: center;
-    background-color: rgba(39, 37, 63, 0.85);
+    background-color: rgba(39, 37, 63, 0.95);
     display: flex;
     flex-direction: column;
     padding: 10px 0;
@@ -2323,6 +2330,7 @@ body {
     margin: 175px 0 0 0; }
 
   .section--features .features__left, .section--features .features__right {
+    padding: 0 20px;
     text-align: center; }
 
   .section--integration img {

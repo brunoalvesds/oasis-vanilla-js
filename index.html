@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
 <head>
   <title>Oasis - Status of your microservices is now accessible at all time</title>
   
@@ -19,22 +19,23 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Oasis.com">
   <meta property="og:description" content="Status of your microservices is now accessible at all time.">
-  <meta property="og:image" content="http://static.oasiscdn.com/assets/images2/icons/facebookicon.jpg">
+  <meta property="og:image" content="img/summary-github.png">
   
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Oasis.com">
   <meta name="twitter:description" content="Status of your microservices is now accessible at all time.">
-  <meta name="twitter:image" content="http://static.oasiscdn.com/assets/images2/icons/facebookicon.jpg">
+  <meta name="twitter:image" content="img/summary-github.png">
+
   <link rel="Canonical" href="http://oasis.com">
   
   <!-- ===== CSS Files ===== -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="mainHeader">
+  <header class="mainHeader" role="banner">
     <button class="button--mobile"></button>
-    <nav class="mainMenu">
+    <nav class="mainMenu" role="navigation">
       <a href="#home">Home</a>
       <a href="#snippets">Snippets</a>
       <a href="#features">Features</a>
@@ -44,14 +45,14 @@
       <a href="#contact">Contact</a>
     </nav>
   </header>
-  <main>
+  <main role="main">
     <!-- This section will present the main product of the Oasis -->
     <section id="home" class="section--product container wow fadeIn">
       <div class="d-flex">
         <div class="product__left d-flex flex-column justify-content-center">
           <h1 class="product__title">Oasis</h1>
           <p>Status of your microservices is now accessible at all time.</p>
-          <a class="button--download">Download from<br><strong>App Store</strong></a>
+          <a class="button--download" role="button">Download from<br><strong>App Store</strong></a>
         </div>
         <div class="infoBar product__right">
           <div class="infoBar__top">
@@ -85,17 +86,23 @@
       <section class="section--resume">
         <div class="container">
           <ul class="resume__featuredList d-flex align-items-center justify-content-between">
-            <li class="d-flex listItem">
-              <img src="img/summary-github.png" alt="GitHub">
-              <p>works on phone and all devices</p>
+            <li class="listItem">
+              <figure class="d-flex ">
+                <img src="img/summary-github.png" alt="GitHub">
+                <figcaption>works on phone and all devices</figcaption>
+              </figure>
             </li>
-            <li class="d-flex listItem">
-              <img src="img/summary-cpu.png" alt="GitHub">
-              <p>free status page for monitoring</p>
+            <li class="listItem">
+              <figure class="d-flex ">
+                <img src="img/summary-cpu.png" alt="Cpu">
+                <figcaption>free status page for monitoring</figcaption>
+              </figure>
             </li>
-            <li class="d-flex listItem">
-              <img src="img/summary-dollar.png" alt="GitHub">
-              <p>easy integrations and setup</p>
+            <li class="listItem">
+              <figure class="d-flex ">
+                <img src="img/summary-dollar.png" alt="Dollar">
+                <figcaption>easy integrations and setup</figcaption>
+              </figure>
             </li>
           </ul>
           
@@ -226,7 +233,6 @@
                 </div>
                 <canvas id="chart--2" width="100%" height="20%"></canvas>
               </li>
-              
             </ul>
           </div>
         </section><!-- end stats section -->
@@ -236,12 +242,12 @@
           <div class="container">
             <h2 class="section__title">Trusted by</h2>
             <div class="d-flex justify-content-between">
-              <img src="img/logos/1.svg" alt="">
-              <img src="img/logos/2.svg" alt="">
-              <img src="img/logos/3.svg" alt="">
-              <img src="img/logos/4.svg" alt="">
-              <img src="img/logos/5.svg" alt="">
-              <img src="img/logos/6.svg" alt="">
+              <img src="img/logos/1.svg" alt="Airbnb" title="Airbnb">
+              <img src="img/logos/2.svg" alt="Twitter" title="Twitter">
+              <img src="img/logos/3.svg" alt="Eventbrite" title="Eventbrite">
+              <img src="img/logos/4.svg" alt="Netflix" title="Netflix">
+              <img src="img/logos/5.svg" alt="Google" title="Google">
+              <img src="img/logos/6.svg" alt="Spotify" title="Spotify">
             </div>
           </div>
         </section><!-- end integration section -->
@@ -296,7 +302,7 @@
       </main>
       <footer>
         <!-- ===== JavaScript Files ===== -->
-        <!-- ChartJS -->
+        <!-- ChartJS via CDN -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js" integrity="sha256-CfcERD4Ov4+lKbWbYqXD6aFM9M51gN4GUEtDhkWABMo=" crossorigin="anonymous"></script>
         
         <!-- Glide Slider -->
