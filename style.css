@@ -2321,6 +2321,8 @@ body {
     .section--resume .resume__featuredList .listItem img {
       align-self: center;
       margin: 0; }
+    .section--resume .resume__featuredList .listItem figcaption {
+      text-align: center; }
   .section--resume .resume__text, .section--resume .resume__title {
     margin-bottom: 25px; }
   .section--resume .resume__title {
