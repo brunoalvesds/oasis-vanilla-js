@@ -13,4 +13,7 @@ Observações:
 Referências:
 
 - https://developer.mozilla.org
+- https://www.w3schools.com
 - https://www.w3.org/TR/html-aria/
+- https://getbootstrap.com/docs/4.0/utilities/flex/
+- http://getbem.com/
