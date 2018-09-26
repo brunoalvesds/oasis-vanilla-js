@@ -2326,6 +2326,7 @@ body {
   .section--resume .resume__text, .section--resume .resume__title {
     margin-bottom: 25px; }
   .section--resume .resume__title {
+    font-size: 45px;
     text-align: center; }
 
   .section--snippets .snippets__right {
