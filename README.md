@@ -1,4 +1,4 @@
-# Oasis - MZ test.
+# Oasis - Desenvolvimento de Interface(HTML/CSS/SASS/Vanilla JavaScript)
 
 Observações:
 
